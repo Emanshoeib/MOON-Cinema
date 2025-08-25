@@ -199,6 +199,10 @@
     }
     
     /* المقاعد */
+    h5{
+      direction: ltr;
+     }
+
     .seating {
       display: flex;
       flex-direction: column;
@@ -371,3 +375,4 @@
       }
     }
   
+
