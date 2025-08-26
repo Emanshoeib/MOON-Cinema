@@ -372,8 +372,23 @@
       .seat span {
         font-size: 10px;
       }
+    @media (max-width: 480px) {
+  .seats {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px; /* صغري المسافة بينهم */
+  }
+
+  .seat {
+    padding: 6px;       /* قللي الحشو الداخلي */
+    font-size: 12px;    /* صغري الخط شوية */
+  }
+
+  .seat span {
+    font-size: 10px;    /* رقم الكرسي يفضل صغير */
+  }
     }
   
+
 
 
 
