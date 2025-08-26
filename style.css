@@ -217,7 +217,7 @@
       direction: ltr;
       display: grid;
       grid-template-columns: repeat(15, 1fr);
-      gap: 5px;
+      gap: 10px;
       justify-content: center;
     }
     
@@ -302,94 +302,75 @@
     
     /* تحسينات للهاتف */
     @media (max-width: 768px) {
-      header {
-        padding: 20px 15px;
-        font-size: 24px;
-      }
-      
-      nav {
-        padding: 10px 5px;
-      }
-      
-      nav a {
-        padding: 8px 12px;
-        font-size: 14px;
-      }
-      
-      section {
-        padding: 15px;
-      }
-      
-      h2 {
-        font-size: 24px;
-      }
-      
-      .movies-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 15px;
-      }
-      
-      th, td {
-        padding: 10px 5px;
-        font-size: 14px;
-      }
-      
-      .cards {
-        grid-template-columns: 1fr;
-      }
-      
-      .seats {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      }
-      
-      form {
-        padding: 20px 15px;
-      }
-    }
+header {
+padding: 20px 15px;
+font-size: 24px;
+}
+
+nav {  
+    padding: 10px 5px;  
+  }  
     
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 22px;
-      }
-      
-      nav a {
-        font-size: 12px;
-        padding: 6px 10px;
-      }
-      
-      h2 {
-        font-size: 20px;
-      }
-      
-      .movies-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      
-      .seats {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      }
-      
-      .seat span {
-        font-size: 10px;
-      }
-    @media (max-width: 480px) {
-  .seats {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px; /* صغري المسافة بينهم */
-  }
-
-  .seat {
-    padding: 6px;       /* قللي الحشو الداخلي */
-    font-size: 12px;    /* صغري الخط شوية */
-  }
-
-  .seat span {
-    font-size: 10px;    /* رقم الكرسي يفضل صغير */
-  }
-    }
+  nav a {  
+    padding: 8px 12px;  
+    font-size: 14px;  
+  }  
+    
+  section {  
+    padding: 15px;  
+  }  
+    
+  h2 {  
+    font-size: 24px;  
+  }  
+    
+  .movies-grid {  
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));  
+    gap: 15px;  
+  }  
+    
+  th, td {  
+    padding: 10px 5px;  
+    font-size: 14px;  
+  }  
+    
+  .cards {  
+    grid-template-columns: 1fr;  
+  }  
+    
+  .seats {  
+    grid-template-columns: repeat(5, 1fr);  
+  }  
+    
+  form {  
+    padding: 20px 15px;  
+  }  
+}  
   
-
-
-
-
+@media (max-width: 480px) {  
+  header h1 {  
+    font-size: 22px;  
+  }  
+    
+  nav a {  
+    font-size: 12px;  
+    padding: 6px 10px;  
+  }  
+    
+  h2 {  
+    font-size: 20px;  
+  }  
+    
+  .movies-grid {  
+    grid-template-columns: repeat(2, 1fr);  
+  }  
+    
+  .seats {  
+    grid-template-columns: repeat(5, 1fr);  
+  }  
+    
+  .seat span {  
+    font-size: 10px;  
+  }  
+}
 
