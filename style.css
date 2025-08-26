@@ -100,7 +100,7 @@
       box-shadow: 0 8px 20px rgba(179, 0, 0, 0.4);
     }
     
-    /* الجدول - الحل الجديد للاستجابة */
+    /* الجدول     */
     .table-container {
       width: 100%;
       overflow-x: auto;
@@ -114,8 +114,7 @@
       width: 100%;
       border-collapse: collapse;
       background: #09090a;
-      min-width: 800px; /* للهواتف، سيتطلب هذا التمرير الأفقي */
-    }
+      min-width: 800px;
     
     th, td {
       padding: 12px 8px;
@@ -340,7 +339,7 @@
       }
       
       .seats {
-        grid-template-columns: repeat(15, 1fr);
+        grid-template-columns: repeat(5, 1fr);
       }
       
       form {
@@ -367,7 +366,7 @@
       }
       
       .seats {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
       }
       
       .seat span {
@@ -375,4 +374,5 @@
       }
     }
   
+
 
