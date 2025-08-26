@@ -100,6 +100,347 @@
       box-shadow: 0 8px 20px rgba(179, 0, 0, 0.4);
     }
     
+    /* الجدول - الحل الجديد للاستجابة */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #09090a;
+      min-width: 800px; /* للهواتف، سيتطلب هذا التمرير الأفقي */
+    }
+    
+    th, td {
+      padding: 12px 8px;
+      text-align: center;
+      border: 1px solid #33334d;
+    }
+    
+    th {
+      background: #b30000;
+      color: #fff;
+      font-weight: bold;
+    }
+    
+    tr:nth-child(even) {
+      background: #141415;
+    }
+    
+    .time {
+      font-weight: bold;
+      background: #111;
+      color: #b30000;
+      direction: ltr;
+    }
+    
+    /* البطاقات */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 15px;
+    }
+    
+    .card {
+      background: rgba(47, 46, 46, 0.749);
+     padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid #33334d;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(179, 0, 0, 0.4);
+    }
+    
+    .card p {
+      color: #e8e7df;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
+    /* النموذج */
+    form {
+      background: rgba(47, 46, 46, 0.749);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid #4f1406;
+    }
+    
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+      color: #f4f1f1;
+    }
+    
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #b84b324f;
+      background: #333;
+      color: #fff;
+      font-size: 16px;
+    }
+    
+    /* المقاعد */
+    h5{
+      direction: ltr;
+     }
+
+    .seating {
+      display: flex;
+      flex-direction: column;
+      column-gap: 5PX;
+    }
+    
+    .section {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .seats {
+      direction: ltr;
+      display: grid;
+      grid-template-columns: repeat(15, 1fr);
+      gap: 10px;
+      justify-content: center;
+    }
+    
+    .seat {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      padding-bottom: 100%; /* لجعلها مربعة */
+      cursor: pointer;
+    }
+    
+    .seat input[type="checkbox"] {
+      display: none;
+    }
+    
+    .seat span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #333;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-size: 12px;
+      transition: all 0.3s;
+    }
+    
+    .seat input[type="checkbox"]:checked + span {
+      background: #b30000;
+      color: #fff;
+      font-weight: bold;
+      transform: scale(1.1);
+    }
+    
+    /* زر الحجز */
+    button {
+      display: block;
+      margin: 30px auto 0;
+      background: #b30000;
+      color: #fff;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    button:hover {
+      background: #ff0000;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(179, 0, 0, 0.4);
+    }
+    
+    /* الفوتر */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111;
+      margin-top: 50px;
+      border-top: 2px solid #b30000;
+    }
+    
+    footer a {
+      color: #772b07;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    
+    footer a:hover {
+      color: #e5dede;
+      text-decoration: underline;
+    }
+    
+    /* تحسينات للهاتف */
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 15px;
+        font-size: 24px;
+      }
+      
+      nav {
+        padding: 10px 5px;
+      }
+      
+      nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+      
+      section {
+        padding: 15px;
+      }
+      
+      h2 {
+        font-size: 24px;
+      }
+      
+      .movies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+      }
+      
+      th, td {
+        padding: 10px 5px;
+        font-size: 14px;
+      }
+      
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      
+      .seats {
+        grid-template-columns: repeat(15, 1fr);
+      }
+      
+      form {
+        padding: 20px 15px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 22px;
+      }
+      
+      nav a {
+        font-size: 12px;
+        padding: 6px 10px;
+      }
+      
+      h2 {
+        font-size: 20px;
+      }
+      
+      .movies-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .seats {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .seat span {
+        font-size: 10px;
+      }
+    }
+  
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    nav a {
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s;
+      border-radius: 5px;
+      background: #222;
+    }
+    
+    nav a:hover {
+      color: #fff;
+      background: #b30000;
+    }
+    
+    /* الأقسام العامة */
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #b30000;
+      font-size: 28px;
+      border-bottom: 2px solid #b30000;
+      padding-bottom: 10px;
+    }
+    
+    h3, h4 {
+      color: ;
+      margin: 15px 0;
+    }
+    
+    /* الأفلام */
+    .movies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 15px;
+    }
+    
+    .movies-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      aspect-ratio: 2/3;
+      object-fit: cover;
+    }
+    
+    .movies-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(179, 0, 0, 0.4);
+    }
+    
     /* الجدول     */
     .table-container {
       width: 100%;
@@ -373,4 +714,5 @@ nav {
     font-size: 10px;  
   }  
 }
+
 
