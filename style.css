@@ -367,7 +367,7 @@
       }
       
       .seats {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
       }
       
       .seat span {
@@ -687,32 +687,6 @@ nav {
     padding: 20px 15px;  
   }  
 }  
-  
-@media (max-width: 480px) {  
-  header h1 {  
-    font-size: 22px;  
-  }  
-    
-  nav a {  
-    font-size: 12px;  
-    padding: 6px 10px;  
-  }  
-    
-  h2 {  
-    font-size: 20px;  
-  }  
-    
-  .movies-grid {  
-    grid-template-columns: repeat(2, 1fr);  
-  }  
-    
-  .seats {  
-    grid-template-columns: repeat(5, 1fr);  
-  }  
-    
-  .seat span {  
-    font-size: 10px;  
-  }  
-}
+
 
 
