@@ -217,7 +217,7 @@
       direction: ltr;
       display: grid;
       grid-template-columns: repeat(15, 1fr);
-      gap: 10px;
+      gap: 5px;
       justify-content: center;
     }
     
@@ -374,5 +374,6 @@
       }
     }
   
+
 
 
