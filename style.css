@@ -339,7 +339,7 @@
       }
       
       .seats {
-        grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       }
       
       form {
@@ -366,7 +366,7 @@
       }
       
       .seats {
-        grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       }
       
       .seat span {
@@ -374,6 +374,7 @@
       }
     }
   
+
 
 
 
